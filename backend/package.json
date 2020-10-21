@@ -2,11 +2,6 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
-  "author": {
-    "name": "Xindi Xu",
-    "email": "xindixu@utexas.edu"
-  },
-  "license": "UNLICENSED",
   "scripts": {
     "start:dev": "eval $(cat .env) nodemon -r esm index.js",
     "start": "node index.js",
