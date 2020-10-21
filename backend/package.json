@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Xindi Xu",
+    "email": "xindixu@utexas.edu"
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "start:dev": "eval $(cat .env) nodemon -r esm index.js",
+    "start": "node index.js",
+    "seed": "eval $(cat .env) node -r esm seed.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "elasticsearch": "^16.7.1",
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  }
+}
